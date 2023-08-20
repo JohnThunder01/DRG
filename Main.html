@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('images/Untitled design (12).png'); /* Add the path to your existing background image */
+      background-size: cover; /* Scale the image to cover the entire body */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+    }
+    
+    .header {
+      background-color: #032450;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      height: 80px; /* Adjust the height as needed */
+    }
+    
+    .logo img {
+      height: 110px; /* Adjust the height of the logo image */
+    }
+    
+    .connect-wallet {
+      color: #000;
+      font-size: 16px;
+      margin-right: 40px; /* Adjust the margin as needed */
+      background-color: #cacaca;
+      padding: 12px 24px; /* Increase the padding for a larger button */
+      border-radius: 50px; /* Increase the border radius value for a more stretched effect */
+      transition: background-color 0.3s ease;
+      border: none; /* Remove the border */
+      box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, 0.8); /* Add darker 3D shadow effect */
+    }
+    
+    .connect-wallet:hover {
+      background-color: #a0a0a0; /* Darken the hover color */
+    }
+    
+    .welcome-message {
+      text-align: center;
+      color: #fff;
+      font-size: 54px; /* Reduce the font size by 25% */
+      margin-top: 150px; /* Adjust the margin as needed */
+      margin-bottom: 75px; /* Add margin to create space at the bottom */
+    }
+    
+    .about-button {
+      text-align: center;
+      margin-top: 45px; /* Reduce the margin to create less distance */
+      margin-bottom: 22.5px; /* Add margin to create space at the bottom */
+    }
+    
+    .about-button button {
+      color: #fff;
+      font-size: 18px; /* Reduce the font size by 25% */
+      background-color: #032450;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .about-button button:hover {
+      background-color: #02406c; /* Darken the hover color */
+    }
+    
+    .about-section {
+      background-color: rgba(255, 255, 255, 0.836); /* White background with transparency */
+      padding: 10px; /* Reduce the padding by 25% */
+      margin: 1200px auto; /* Reduce the margin-top value to position the section lower */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    /* Add more styles for the rest of your website content */
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <!-- Add your logo image here -->
+      <img src="images/Untitled design (13).png" alt="Logo">
+    </div>
+    <button class="connect-wallet">Connect Wallet</button>
+  </div>
+  
+  <div class="welcome-message">
+    Welcome To Dragon Metaverse
+  </div>
+  
+  <div class="about-button">
+    <button onclick="scrollToSection()">About Us</button>
+  </div>
+  
+  <!-- Add the rest of your website content here -->
+  
+  <div class="about-section" id="about-section">
+    <h2 style="font-size: 45px;">About Us</h2>
+    <p style="font-size: 21px;">Dragon Metaverse is the future of WEB 3.0. We are a visionary platform with ambitious plans to revolutionize the digital landscape. Our mission is to empower individuals and businesses by providing them with cutting-edge technologies and innovative solutions.</p>
+    
+    <p style="font-size: 21px;">At Dragon Metaverse, we are not just another blockchain project. We have set our sights on creating our own cryptocurrency and decentralized exchange (DEX) called Dragon Token. Dragon Token aims to offer a secure and transparent financial ecosystem that rewards all holders of our NFTs and tokens.</p>
+    
+    <p style="font-size: 21px;">We are proud to introduce our technology that improves Dragon Token and enhances the value proposition for our community. Our technology is designed to optimize the performance and utility of Dragon Token, creating a rewarding experience for our token holders.</p>
+
+    <p style="font-size: 21px;">Dragon Metaverse presents countless opportunities for individuals, developers, and businesses to join us on this exciting journey. Whether you are an investor, a blockchain enthusiast, or a tech-savvy entrepreneur, we invite you to explore the potential of our platform.</p>
+    
+    <p style="font-size: 21px;">To learn more about our plans and milestones, we encourage you to take a look at our roadmap. It outlines our strategic vision and the steps we will take to achieve our goals. Join us as we shape the future of technology and reshape the way we interact in the digital world.</p>
+  </div>
+  
+  <script>
+    function scrollToSection() {
+      const aboutSection = document.getElementById("about-section");
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
